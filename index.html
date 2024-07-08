@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hat Contest!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hat Contest!</h1>
+    </header>
+    <main>
+        <div>
+            <input type="text" id="newName" placeholder="Agregar invitadx">
+            <button id="addName">Agregar</button>
+        </div>
+        <table id="hatTable">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Mejor Sombrero</th>
+                    <th>Sombrero Más Formal</th>
+                    <th>Hizo lo que pudo</th>
+                    <th>Remover</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added here dynamically -->
+            </tbody>
+        </table>
+        <button id="showWinners">Mostrar Ganadores!</button>
+        <button id="toggleVisibility">👁️ Esconder Ganadores</button>
+        <button id="toggleCounters">👁️ Esconder Votos</button>
+        <button id="resetVotes">Reiniciar Votos</button>
+        <div id="winners"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

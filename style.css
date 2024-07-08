@@ -1,0 +1,161 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffeb3b;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff5722;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    border-bottom: 5px solid #673ab7;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px #ffeb3b;
+}
+
+main {
+    padding: 2em;
+    max-width: 900px;
+    margin: 2em auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    border: 5px dashed #673ab7;
+}
+
+div {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+input[type="text"] {
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 2px solid #ff5722;
+    width: calc(100% - 1.4em);
+    max-width: 300px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+    border: 5px solid #673ab7;
+    background-color: #f5f5f5;
+}
+
+th, td {
+    padding: 0.5em;
+    text-align: center;
+    border: 2px dashed #673ab7;
+    font-size: 1.2em;
+}
+
+th {
+    background-color: #ff5722;
+    color: white;
+    font-size: 1.3em;
+    text-shadow: 1px 1px #673ab7;
+}
+
+td {
+    background-color: #ffeb3b;
+}
+
+button {
+    padding: 0.5em 1em;
+    margin: 0.2em;
+    background-color: #673ab7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.1s;
+    text-shadow: 1px 1px #ffeb3b;
+}
+
+button:active {
+    background-color: #5e35b1;
+    transform: scale(0.95);
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+button.pressed {
+    background-color: #5e35b1;
+}
+
+#showWinners, #toggleVisibility, #toggleCounters, #addName {
+    font-size: 1.2em;
+    margin-top: 1em;
+    display: inline-block;
+    text-shadow: 2px 2px #ffeb3b;
+}
+
+#winners {
+    text-align: center;
+    margin-top: 2em;
+    background-color: #ffffff;
+    border: 5px dashed #673ab7;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#winners h2 {
+    margin: 0.5em 0;
+    font-size: 1.5em;
+    text-shadow: 1px 1px #ffeb3b;
+}
+
+#toggleVisibility, #toggleCounters {
+    margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 0.5em 0;
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    main {
+        padding: 1em;
+        margin: 1em;
+    }
+
+    table, th, td {
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 0.4em 0.8em;
+        font-size: 0.9em;
+    }
+
+    #showWinners, #toggleVisibility, #toggleCounters, #addName {
+        font-size: 1em;
+    }
+
+    input[type="text"] {
+        width: calc(100% - 1em);
+    }
+
+    div {
+        margin-bottom: 0.5em;
+    }
+}
