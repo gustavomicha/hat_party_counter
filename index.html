@@ -15,20 +15,22 @@
             <input type="text" id="newName" placeholder="Agregar invitadx">
             <button id="addName">Agregar</button>
         </div>
-        <table id="hatTable">
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Mejor Sombrero</th>
-                    <th>Sombrero Más Formal</th>
-                    <th>Hizo lo que pudo</th>
-                    <th>Remover</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Rows will be added here dynamically -->
-            </tbody>
-        </table>
+        <div style="overflow: auto;">
+            <table id="hatTable">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Mejor Sombrero</th>
+                        <th>Sombrero Más Formal</th>
+                        <th>Hizo lo que pudo</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be added here dynamically -->
+                </tbody>
+            </table>
+        </div>
         <button id="showWinners">Mostrar Ganadores!</button>
         <button id="toggleVisibility">👁️ Esconder Ganadores</button>
         <button id="toggleCounters">👁️ Esconder Votos</button>

@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const names = [
-        'Cami','Eze','Gerson','Meli','Santi','Bian','Eka','Valen','Facu',
+        'Facu',
         'Lichi','Gus','Juli','Ale','AmigaTone','Dani','Guillo','Noe','Romi',
         'Sofi','Tami','Alvaro','Ana','Elea','Flor','Gabo','Jero','Mosca',
         'Niño','Pablito','Peter','Plu','Roa','Fran','Laura','Lucas','Magali',
-        'Mono','Nico','Tone', 
+        'Mono','Nico','Tone',
+        'Eze','Gerson','Meli','Santi','Bian','Eka','Valen',
         // Add more names here, total 40 names
     ];
 
