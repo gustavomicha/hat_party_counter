@@ -129,6 +129,9 @@ button.pressed {
 }
 
 @media (max-width: 600px) {
+    body {
+        font-family: Arial, sans-serif;
+    }
     header {
         padding: 0.5em 0;
         font-size: 1.5em;
@@ -143,7 +146,12 @@ button.pressed {
         margin: 1em;
     }
 
-    table, th, td {
+    table {
+        font-size: 0.9em;
+        overflow-x: auto;
+    }
+
+    th, td {
         font-size: 0.9em;
     }
 
