@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 body {
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    font-family: 'Fredoka One', cursive, sans-serif;
     background-color: #ffeb3b;
     margin: 0;
     padding: 0;
@@ -143,6 +143,14 @@ button.pressed {
     margin-left: 10px;
 }
 
+#winners h2 {
+    margin: 0.5em 0;
+    font-size: 1.5em;
+    text-shadow: 1px 1px #ffeb3b;
+    word-wrap: break-word; /* This allows long lines to wrap */
+}
+
+
 @media (max-width: 600px) {
     body {
         font-size: 14px; /* Adjust this value as needed */
@@ -167,6 +175,7 @@ button.pressed {
         overflow-x: auto;
         max-height: 400px; /* Adjust this value as needed */
         overflow-y: auto;
+        font-size: 1.4em;
     }
 
     th, td {
@@ -189,4 +198,8 @@ button.pressed {
     div {
         margin-bottom: 0.5em;
     }
+
+    #winners h2 {
+        font-size: 1.2em; /* Slightly smaller font on mobile */
+
 }

@@ -159,21 +159,28 @@ document.addEventListener('DOMContentLoaded', () => {
         winnersDiv.innerHTML = '';
         categories.forEach(category => {
             let maxPoints = -1;
-            let winner = '';
+            let winners = [];
             const pointsSpans = document.querySelectorAll(`.points[data-category="${category}"]`);
             pointsSpans.forEach(span => {
                 const points = parseInt(span.textContent, 10);
                 const name = span.getAttribute('data-name');
                 if (points > maxPoints) {
                     maxPoints = points;
-                    winner = name;
+                    winners = [name];
+                } else if (points === maxPoints) {
+                    winners.push(name);
                 }
             });
             const winnerElement = document.createElement('h2');
-            winnerElement.textContent = `Ganador ${category.charAt(0).toUpperCase() + category.slice(1)}: ${winner}`;
+            const categoryName = category.charAt(0).toUpperCase() + category.slice(1);
+            if (winners.length > 1) {
+                winnerElement.textContent = `Ganadores ${categoryName}: ${winners.join(', ')}`;
+            } else {
+                winnerElement.textContent = `Ganador ${categoryName}: ${winners[0]}`;
+            }
             winnersDiv.appendChild(winnerElement);
         });
-
+    
         showWinnersButton.classList.add('pressed');
         setTimeout(() => {
             showWinnersButton.classList.remove('pressed');
