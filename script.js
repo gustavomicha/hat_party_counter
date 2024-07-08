@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button class="decrement" data-category="lo-que-pudo" data-name="${name}">-</button>
             </td>
             <td>
-                <button class="remove" data-name="${name}">Remove</button>
+                <button class="remove" data-name="${name}">Remover</button>
             </td>
         `;
         hatTableBody.appendChild(row);
