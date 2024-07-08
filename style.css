@@ -12,13 +12,13 @@ header {
     color: white;
     text-align: center;
     padding: 1em 0;
-    border-bottom: 5px solid #673ab7;
+    border-bottom: 5px solid #2e7d32;
 }
 
 h1 {
     margin: 0;
     font-size: 2.5em;
-    text-shadow: 2px 2px #ffeb3b;
+    /* text-shadow: 2px 2px #ffeb3b; */
 }
 
 main {
@@ -28,7 +28,7 @@ main {
     background-color: #ffffff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
-    border: 5px dashed #673ab7;
+    border: 5px dashed #2e7d32;
 }
 
 div {
@@ -49,7 +49,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 2em;
-    border: 5px solid #673ab7;
+    border: 5px solid #2e7d32;
     background-color: #f5f5f5;
     overflow-x: auto;
     display: block;
@@ -60,7 +60,7 @@ thead th {
     top: 0;
     background-color: #ff5722;
     color: white;
-    text-shadow: 1px 1px #673ab7;
+    /* text-shadow: 1px 1px #2e7d32; */
     z-index: 3;
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
 }
@@ -80,7 +80,7 @@ thead th:first-child {
 th, td {
     padding: 0.5em;
     text-align: center;
-    border: 2px dashed #673ab7;
+    border: 2px dashed #2e7d32;
     font-size: 1.2em;
     white-space: nowrap;
 }
@@ -92,14 +92,14 @@ td {
 button {
     padding: 0.5em 1em;
     margin: 0.2em;
-    background-color: #673ab7;
+    background-color: #2e7d32;
     color: white;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     font-size: 1em;
     transition: background-color 0.3s, transform 0.1s;
-    text-shadow: 1px 1px #ffeb3b;
+    /* text-shadow: 1px 1px #ffeb3b; */
 }
 
 button:active {
@@ -120,14 +120,14 @@ button.pressed {
     font-size: 1.2em;
     margin-top: 1em;
     display: inline-block;
-    text-shadow: 2px 2px #ffeb3b;
+    /* text-shadow: 2px 2px #ffeb3b; */
 }
 
 #winners {
     text-align: center;
     margin-top: 2em;
     background-color: #ffffff;
-    border: 5px dashed #673ab7;
+    border: 5px dashed #2e7d32;
     padding: 1em;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -136,7 +136,7 @@ button.pressed {
 #winners h2 {
     margin: 0.5em 0;
     font-size: 1.5em;
-    text-shadow: 1px 1px #ffeb3b;
+    /* text-shadow: 1px 1px #ffeb3b; */
 }
 
 #toggleVisibility, #toggleCounters {
@@ -146,7 +146,7 @@ button.pressed {
 #winners h2 {
     margin: 0.5em 0;
     font-size: 1.5em;
-    text-shadow: 1px 1px #ffeb3b;
+    /* text-shadow: 1px 1px #ffeb3b; */
     word-wrap: break-word; /* This allows long lines to wrap */
 }
 
