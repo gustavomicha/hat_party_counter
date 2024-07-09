@@ -28,9 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button class="decrement" data-category="mejor" data-name="${name}">-</button>
             </td>
             <td>
-                <button class="increment" data-category="formal" data-name="${name}">+</button>
-                <span class="points" data-category="formal" data-name="${name}">0</span>
-                <button class="decrement" data-category="formal" data-name="${name}">-</button>
+                <button class="increment" data-category="outfit" data-name="${name}">+</button>
+                <span class="points" data-category="outfit" data-name="${name}">0</span>
+                <button class="decrement" data-category="outfit" data-name="${name}">-</button>
             </td>
             <td>
                 <button class="increment" data-category="lo-que-pudo" data-name="${name}">+</button>
@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     showWinnersButton.addEventListener('click', () => {
-        const categories = ['mejor', 'formal', 'lo-que-pudo'];
+        const categories = ['mejor', 'outfit', 'lo-que-pudo'];
         winnersDiv.innerHTML = '';
         categories.forEach(category => {
             let maxPoints = -1;
